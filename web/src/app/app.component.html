@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="btn btn-primary" (click)="sampleOpen()">
+        <i class="bi bi-record-fill"></i>
+        <span class="ms-1" translate>record</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="btn btn-primary" (click)="newApplication()">
+        <i class="bi bi-plus"></i>
+        <span class="ms-1" translate>new_application</span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-applications-card></app-applications-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li *ngFor="let scenario of scenarios" class="list-group-item">{{scenario.name}}</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-image></app-image>
+    </div>
+  </div>
+</div>
